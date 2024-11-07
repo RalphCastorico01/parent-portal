@@ -2,14 +2,80 @@
 
 body {
     background-color: #f8f9fa; /* Light gray background for a modern look */
+    font-family: 'Montserrat', sans-serif; /* Using Montserrat font for a modern aesthetic */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding to body for spacing */
 }
 
 h2 {
     color: #343a40; /* Dark color for the heading */
+    font-size: 1.75rem; /* Larger heading size for prominence */
+    margin-bottom: 20px; /* Spacing below the heading */
 }
 
 .status-card {
     background-color: #ffffff; /* White background for the card */
     border-radius: 0.5rem; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow for depth */
+    padding: 20px; /* Padding inside the card */
+    margin-bottom: 20px; /* Spacing between cards */
+    transition: transform 0.2s; /* Smooth transform effect on hover */
+}
+
+.status-card:hover {
+    transform: translateY(-5px); /* Raise card on hover for interactivity */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.table {
+    margin-top: 20px; /* Space above the table */
+    border-collapse: collapse; /* Remove double borders */
+}
+
+.table th, .table td {
+    padding: 15px; /* Padding for table cells */
+    text-align: left; /* Align text to the left */
+}
+
+.table th {
+    background-color: #343a40; /* Dark background for header */
+    color: white; /* White text for contrast */
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+.table tr:hover {
+    background-color: #e9ecef; /* Light gray background on row hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border: none; /* Remove border */
+    border-radius: 0.25rem; /* Rounded button corners */
+    padding: 10px 15px; /* Padding for button */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Danger button color */
+    border: none; /* Remove border */
+    border-radius: 0.25rem; /* Rounded button corners */
+    padding: 10px 15px; /* Padding for button */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.alert {
+    margin-top: 20px; /* Space above alerts */
+    border-radius: 0.5rem; /* Rounded corners for alerts */
 }

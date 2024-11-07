@@ -66,16 +66,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/styles_index.css">
+    <link rel="stylesheet" href="styles_index.css">
 </head>
 <body>
 
 <div class="header">
-    <img src="../parent-portal/img/csnlogo.png" alt="CSN Logo"/>
-    <div>
+    <img src="../csnlogo.png" alt="CSN Logo"/>
         <h1>Parañaque City Center</h1>
         <h2>for Children with Special Needs</h2>
-    </div>
 </div>
 
 
@@ -106,7 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 </div>
 
-<div class="footer">
+<div class="footer text-center">
     <p>Privacy Statement | Policy | Contact Us</p>
     <p>2024 by CSN Paranaque. All Rights Reserved.</p>
 </div>

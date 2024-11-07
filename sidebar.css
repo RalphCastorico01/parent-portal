@@ -1,0 +1,68 @@
+/* Overall sidebar styles */
+.sidebar {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px; /* Space around the content */
+    width: 250px; /* Fixed width */
+    height: 100vh; /* Full height */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    position: fixed; /* Fix the sidebar to the left */
+    overflow-y: auto; /* Allow scrolling if content exceeds the height */
+}
+
+/* Content area adjustment */
+.content {
+    margin-left: 250px; /* Add left margin equal to the sidebar width */
+    padding: 20px; /* Add padding to the content area */
+}
+
+/* Additional styles for the content area */
+.container {
+    max-width: 800px; /* Max width for the content area */
+}
+
+/* Logo styling */
+.sidebar img.logo {
+    width: 150px; /* Set logo width */
+    height: 150px; /* Set logo height */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Header styling */
+.sidebar h2 {
+    font-size: 1.5rem; /* Font size for the username */
+    color: #343a40; /* Darker color for text */
+    text-align: center; /* Center align */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Link styles */
+.sidebar a {
+    display: block; /* Make links block elements */
+    padding: 10px; /* Space around link text */
+    color: #050505; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.2s; /* Smooth background transition */
+}
+
+/* Hover effect for links */
+.sidebar a:hover {
+    color: #0AD1C8; /* Bootstrap primary color on hover */
+}
+
+/* Logout link styling */
+.sidebar .logout {
+    margin-top: auto; /* Push logout link to the bottom */
+    font-weight: bold; /* Make it bold */
+    color: #dc3545; /* Bootstrap danger color */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Allow height to adjust */
+        position: relative; /* Change position */
+        box-shadow: none; /* Remove shadow */
+    }
+}

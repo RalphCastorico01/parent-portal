@@ -11,11 +11,11 @@ include 'session_start.php';
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="sidebar.css">
 </head>
 <body>
 <div class="sidebar">
-    <img src="../parent-portal/img/csnlogo-removebg.png" alt="Admin Logo" class="img-fluid">
+    <img src="../csnlogo-removebg.png" alt="Admin Logo" class="img-fluid">
     <h4 class="text-center">Parent Portal - Admin</h4> <!-- Added Parent Portal header -->
     <h3 class="text-center"><?php echo htmlspecialchars($_SESSION['username']); ?></h3> <!-- Changed to h3 for username -->
     <a href="admin_dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
