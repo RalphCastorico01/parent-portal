@@ -59,7 +59,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['user_id'])) {
     <title>Users List</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file if needed -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_modal.css">
 </head>
 
 <body>
@@ -82,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['user_id'])) {
                 <div class="ms-auto">
                     <form method="POST" class="mb-0">
                         <div class="input-group" style="width: 250px;">
-                            <input type="text" name="search_value" value="<?= htmlspecialchars($searchValue); ?>" class="form-control" placeholder="Search by Acc. ID, Username, Email, or Account Type" aria-label="Search" disabled>
+                            <input type="text" name="search_value" value="<?= htmlspecialchars($searchValue); ?>" class="form-control" placeholder="Search by Acc. ID, Username, Email, or Account Type" aria-label="Search">
                             <button type="submit" name="search" class="btn btn-primary">
                                 <i class="fas fa-search"></i> Search
                             </button>
@@ -855,11 +856,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['user_id'])) {
                                                 echo "<label for='$key'>$label</label><br>";
                                             }
                                             ?>
-                                            <!-- <div style="display: flex; align-items: center;">
-                                <input type='checkbox' id='otherCheckbox' name='parents_member[Other]' onclick="toggleOtherCheckboxInput()" <?= isset($parentsMember['Other']) && $parentsMember['Other'] ? 'checked' : ''; ?>>
-                                <label for='otherCheckbox'>Other</label>
-                                <input type='text' id='other_input' name='other_input' style='display: none; margin-left: 10px;' placeholder='Please specify' value="<?= htmlspecialchars($otherInput) ?>">
-                            <!-- </div> --> -->
+                                            
                                         </div>
 
                                         <div class="form-group col-md-6">
@@ -1458,10 +1455,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['user_id'])) {
                                     </div>
                                 </form>
                             </div>
-
-
                         </div>
-                                            </div>
+                        </div>
+                        </div>
+                        
                         <div class="modal-footer d-flex justify-content-between">
                             <div>
                                 <button type="button" class="btn btn-info" onclick="showModalPage('modalPage1-<?= htmlspecialchars($user['id']); ?>')">1</button>
@@ -1505,17 +1502,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['user_id'])) {
                                 </div>
                             </form>
                         </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-
+                        </div>
+                        </div>
+                        </div>
+                        </div>
         <?php endforeach; ?>
         </tbody>
         </table>
     </div>
-    </div>
-
+    <!-- </div> -->
     <!-- Include Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
