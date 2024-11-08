@@ -5,22 +5,21 @@ session_start();
 // Include database connection
 include 'db_connection.php';
 
-// Check if the username is set in the session
-if (!isset($_SESSION['username'])) {
-    echo "<div class='alert alert-danger'>You are not logged in.</div>";
-    exit; // Stop the script if the user is not logged in
-}
+// // Check if the username is set in the session
+// if (!isset($_SESSION['username'])) {
+//     echo "<div class='alert alert-danger'>You are not logged in.</div>";
+//     exit; // Stop the script if the user is not logged in
+// }
 
-// Assuming username is stored in session after login
-$username = $_SESSION['username'];
+// // Assuming username is stored in session after login
+// $username = $_SESSION['username'];
 
 // Fetch pending requests for the logged-in user
 try {
-    $sql = "SELECT request_form_id, username, request_date, request_type, description 
-            FROM requests_form 
-            WHERE username = :username AND status = 'Pending'";
+   
+    $sql = "SELECT request_form_id, username, request_date, request_type, description, status FROM requests_form";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute(['username' => $username]);
+    $stmt->execute();
     $requests = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     echo "<div class='alert alert-danger'>Error fetching requests: " . htmlspecialchars($e->getMessage()) . "</div>";
