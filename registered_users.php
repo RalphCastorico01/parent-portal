@@ -1434,6 +1434,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['user_id'])) {
                                             <label for="rolled_over_hindi">Hindi</label>
                                             </div>
                                     </div>
+                                    
 
                                     <div class="form-group col-md-6">
                                         <label><br>Handa at available akong sundin ang theraphy home program/rekomendasyon para sa aking anak.</label>
@@ -1444,6 +1445,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['user_id'])) {
                                             <label for="rolled_over_oo">Hindi
                                             </label>
                                             </div>
+                                            
 
                                             <label><br>Naintindihan ko na mahalaga ang pagbibigay ng tama na impormasyon upang maangkop ang paggamot sa pangangailangan ng aking anak. Ang impormasyong ito ay maaaring gamitin bilang karagdagang impormasyon para sa dokumentasyon ng therapy. Ang impormasyong ito ay tama ayon sa aking paglalarawan.</label>
                                         <div>
@@ -1505,12 +1507,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['user_id'])) {
                         </div>
                         </div>
                         </div>
-                        </div>
+                        <!-- </div> -->
         <?php endforeach; ?>
         </tbody>
         </table>
     </div>
-    <!-- </div> -->
+    </div>
     <!-- Include Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
